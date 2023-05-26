@@ -12,7 +12,7 @@ pipeline{
             steps {
                 script{
                 sh '''
-                cd backend
+                cd Backend
                 echo 'Building Flask application...'
                 rm -fr *.zip
                 zip -r flask-$BUILD_NUMBER.zip *
